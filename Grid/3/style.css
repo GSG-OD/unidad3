@@ -1,0 +1,51 @@
+.contenedor > *{
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.445);
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    margin: 5px;
+    min-height: 100%;
+}
+.contenedor{
+    display: grid;
+    gap: 10px;
+    grid-template: 'header'100px
+                    'navbar'50px
+                    'main'auto
+                    'footer' 100px;
+                    
+    /* box-shadow: 4px 4px 4px black,
+    /* inset 3px 3px 2px white; */
+    /* color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.header{
+    background-color: royalblue;
+    grid-area: header;
+}
+.navbar{
+    background-color: royalblue;
+    grid-area: navbar;
+}
+.main{
+    background-color: royalblue;
+    grid-area: main;
+}
+.sidebar{
+    background-color: royalblue;
+    grid-area: sidebar;
+}
+.footer{
+    background-color: royalblue;
+    grid-area: footer;
+}
+
+/* el @media se usa parta cuando cambie el tamaño de la pagina que cambie tambien los objetos */
